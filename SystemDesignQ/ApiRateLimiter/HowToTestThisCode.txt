@@ -1,0 +1,39 @@
+IN YOUR Program.cs Main Method write this code 
+
+
+public static void Main(string[] args)
+        {
+            RequestService limiter = new RequestService();
+            string clientId = "client-1";
+            List<Task> tasks = new List<Task>();
+            for (int i = 1; i <= 7; i++)
+            {
+                int requestNo = i;
+
+                tasks.Add(Task.Run(() =>
+                {
+                    bool allowed = limiter.AllowRequest(clientId, DateTime.UtcNow);
+                    Console.WriteLine($"Request {requestNo}: {(allowed ? "Allowed" : "Blocked")}");
+                }));
+            }
+
+            Task.WaitAll(tasks.ToArray());
+
+            Console.WriteLine("Done");
+}
+
+
+Output: 
+
+Request 2: Allowed
+Request 5: Allowed
+Request 1: Allowed
+Request 4: Allowed
+Request 3: Allowed
+Request 6: Blocked
+Request 7: Blocked
+Request 4: Allowed
+Request 3: Allowed
+Request 6: Blocked
+Request 7: Blocked
+Done

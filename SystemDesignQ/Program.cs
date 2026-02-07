@@ -1,40 +1,24 @@
 ﻿
+using System.Diagnostics;
+using ApiRateLimiter;
+using PasswordGeneration;
+
 namespace ThreadSafeTicketBooking
 {
     public class Program
     {
-        
         public static void Main(string[] args)
         {
-            SeatBookingService service = new SeatBookingService();
-            SeatUtility seatUtility = new SeatUtility();
-
-
-            Seat seat1 = new Seat("A1");
-            seatUtility.AddSeats(seat1);
-            Seat seat2 = new Seat("A2");
-            seatUtility.AddSeats(seat2);
-            Seat seat3 = new Seat("A3");
-            seatUtility.AddSeats(seat3);
-            Seat seat4 = new Seat("A4");
-            seatUtility.AddSeats(seat4);
-            User user1 = new User("101","chaitanya", "A1");
-            User user2 = new User("102", "vikas", "A1");
-
-            Task t1 = Task.Run(() =>
-            {
-                bool result = service.BookSeat(user1.SeatChoice, user1.UserId);
-                Console.WriteLine($"User1 booking result: {result}");
-            });
-
-            Task t2 = Task.Run(() =>
-            {
-                bool result = service.BookSeat(user2.SeatChoice, user2.UserId);
-                Console.WriteLine($"User2 booking result: {result}");
-            });
-
-            
-            Task.WaitAll(t1,t2);
+            System.Console.WriteLine("Enter the password");
+            string inputPass = Console.ReadLine();
+            PasswordData pd = new PasswordData();
+            PasswordHashService ph = new PasswordHashService();
+             
+             pd.setPasswordHash(ph.HashPassword(inputPass));
+            System.Console.WriteLine(ph.VerifyPassword(inputPass,pd.PasswordHash));
+            System.Console.WriteLine(pd.PasswordHash);
+            System.Console.WriteLine(pd.GetHashCode());
         }
     }
 }
+
