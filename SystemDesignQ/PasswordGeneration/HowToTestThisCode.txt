@@ -1,0 +1,11 @@
+Paste this lines of code into the main Methods
+
+ System.Console.WriteLine("Enter the password");
+            string? inputPass = Console.ReadLine();
+            PasswordData pd = new PasswordData();
+            PasswordHashService ph = new PasswordHashService();
+             
+             pd.setPasswordHash(ph.HashPassword(inputPass));
+            System.Console.WriteLine(ph.VerifyPassword(inputPass,pd.PasswordHash));
+            System.Console.WriteLine(pd.PasswordHash);
+            System.Console.WriteLine(pd.GetHashCode());
