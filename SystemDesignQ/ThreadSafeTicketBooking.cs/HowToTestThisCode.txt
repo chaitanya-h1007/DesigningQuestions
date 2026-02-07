@@ -1,15 +1,9 @@
-﻿
-namespace ThreadSafeTicketBooking
-{
-    public class Program
-    {
-        
-        public static void Main(string[] args)
-        {
-            SeatBookingService service = new SeatBookingService();
+IN YOUR Program.cs Main Method write this code 
+
+
+
+SeatBookingService service = new SeatBookingService();
             SeatUtility seatUtility = new SeatUtility();
-
-
             Seat seat1 = new Seat("A1");
             seatUtility.AddSeats(seat1);
             Seat seat2 = new Seat("A2");
@@ -33,8 +27,11 @@ namespace ThreadSafeTicketBooking
                 Console.WriteLine($"User2 booking result: {result}");
             });
 
-            
+
             Task.WaitAll(t1,t2);
-        }
-    }
-}
+
+
+
+OUTPUT Will be look something like this:
+User1 booking result: True
+User2 booking result: False 

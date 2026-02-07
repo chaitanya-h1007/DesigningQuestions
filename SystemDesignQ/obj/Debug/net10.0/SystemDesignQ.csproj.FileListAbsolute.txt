@@ -1,0 +1,15 @@
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\bin\Debug\net10.0\SystemDesignQ.exe
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\bin\Debug\net10.0\SystemDesignQ.deps.json
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\bin\Debug\net10.0\SystemDesignQ.runtimeconfig.json
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\bin\Debug\net10.0\SystemDesignQ.dll
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\bin\Debug\net10.0\SystemDesignQ.pdb
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.AssemblyInfoInputs.cache
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.AssemblyInfo.cs
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.csproj.CoreCompileInputs.cache
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.sourcelink.json
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.dll
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\refint\SystemDesignQ.dll
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.pdb
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\SystemDesignQ.genruntimeconfig.cache
+C:\Users\chait\OneDrive\Documents\New folder\SystemDesignQ\obj\Debug\net10.0\ref\SystemDesignQ.dll
